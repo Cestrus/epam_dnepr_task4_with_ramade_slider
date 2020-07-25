@@ -1,0 +1,192 @@
+openapi: 3.0.0
+# Added by API Auto Mocking Plugin
+servers:
+  - description: SwaggerHub API Auto Mocking
+    url: ''
+info:
+  description: This is a simple API
+  version: "1.0.0"
+  title: Simple Inventory API
+  contact:
+    email: you@your-company.com
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+tags:
+  - name: Articles
+    description: Some list
+paths:
+  /api/list:
+    get:
+      tags:
+        - Articles
+      summary: searches article
+      operationId: searchArticle
+      description: search articles list
+      responses:
+        '200':
+          description: search results matching criteria
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Article'
+        '400':
+          description: bad input parameter
+  /api/list/{id}:
+    get:
+      tags:
+        - Articles
+      summary: searches article by id
+      operationId: searchArticleByID
+      parameters:
+       - name: id
+         in: path
+         description: ID of article to return
+         required: true
+         schema:
+            type: integer
+            format: int64
+      description: search article by ID
+      responses:
+        '200':
+          description: search results matching criteria
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Article'
+        '400':
+          description: bad input parameter
+  /api/create-article:
+    post:
+      tags:
+        - Articles
+      summary: add new article
+      operationId: addArticle
+      description: Add new article
+      responses:
+        '201':
+          description: item created
+        '400':
+          description: 'invalid input, object invalid'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Article'
+        description: Article to add
+components:
+  schemas:
+    Article:
+      type: object
+      # required:
+      #   - id
+      #   - postType
+      #   - author
+      #   - imgLink
+      #   - postTitle
+      #   - date
+      #   - postDescription
+      #   - postQuote
+      # properties:
+      #   id:
+      #     type: string
+      #     example: d290f1ee-6c54-4b01-90e6-d701748f0851
+      #   postType:
+      #     type: string
+      #     example: video
+      #   author:
+      #     type: string
+      #     example: Widget Adapter
+      #   imgLink:
+      #     type: string
+      #     example: http:\\www.some_adress_for_img
+      #   postTitle:
+      #     type: string
+      #     example: Zagolovok
+      #   date:
+      #     type: string
+      #     example: 12-06-2020
+      #   postDescription:
+      #     type: string
+      #     example: some discription 
+      #   postQuote:
+      #     type: string
+      #     example: some quote
+
+      required:
+        - id
+        - postType
+        - imgLink
+        - authorImg
+        - authorName
+        - quantityStar
+        - audioTrack        
+        - postTitle
+        - postDescription
+        - postText
+        - postQuote
+        - date
+        - timeRead
+        - quantityView
+
+      properties:
+        id:
+          type: string
+          example: d290f1ee-6c54-4b01-90e6-d701748f0851
+        postType:
+          type: string
+          example: video
+        imgLink:
+          type: string
+          example: http:\\www.some_adress_for_img
+        authorImg:
+          type: string
+          example: http:\\www.some_adress_for_img
+        authorName:
+          type: string
+          example: Widget Adapter
+        quantityStar:
+          type: string
+          example: 2.5
+        audioTrack:
+          type: boolean
+          example: true
+        postTitle:
+          type: string
+          example: Zagolovok
+        postDescription:
+          type: string
+          example: some discription 
+        postText:
+          type: string
+          example: some text
+        postQuote:
+          type: string
+          example: some quote
+        
+        statistic:
+          type: object
+          properties: 
+            date:
+              type: string
+              example: 12-06-2020
+			      timeRead:
+              type: string
+              exemple: 7 min read
+            quantityView:
+              type: integer
+              format: int64
+            
+        
+        
+          
+          
+
+
+
+          
+        

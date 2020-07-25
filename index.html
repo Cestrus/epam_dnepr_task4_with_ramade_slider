@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>	
+</head>
+<body>
+	<div class="page">
+		<a href="#Home"><div class="toHome"></div></a>	
+		<!-- H E A D E R -->
+		<header class="header">
+			<a name="Home"></a>
+			<div class="container">
+				<div class="row row--header">
+					<div class="column-header-left">
+						<p class="header__logo logo">BlogWorld</p>
+					</div>
+					<div class="column-header-right">
+						<nav class="header__menu menu ">
+							<a href="#Home" class="menu__link menu__link--home menu__link--active">Home</a>
+							<a href="#Portfolio" class="menu__link menu__link--portfolio">Portfolio</a>
+							<a href="#Blog" class="menu__link menu__link--blog">Blog</a>
+							<a href="#Pages" class="menu__link menu__link--pages">Pages</a>
+							<a href="#About" class="menu__link menu__link--about">About</a>
+							<a href="#Contact" class="menu__link menu__link--contact">Contact</a>
+						</nav>
+						<button class="btn btn--add-post">Add new post</button>
+					</div>
+				</div>
+			</div>
+        </header>
+		<!-- M A I N -->
+		<main class="content">	
+			<section class="home">
+				<!-- <a name="Home"></a> -->
+				<div class="container">
+					<div class="row row--home-title">
+						<div class="column-home-title">
+							<p class="home__title">Ideas and perspectives you won't find anywhere else.</p>
+						</div>
+					</div>
+					<div class="row row--home">
+						<div class="column-home-subtitle">
+							<p class="home__subtitle">BlogWorld taps into the brains of the world’s most insightful writers, thinkers, and storytellers to bring you the smartest takes on topics that matter. So whatever your interest, you can always find fresh thinking and unique perspectives.</p>
+							<div class="home__navigation-block">
+								<button class="btn btn--home-dark">Explore</button>
+								<button class="btn btn--home-light">Learn more</button>
+							</div>
+						</div>		
+					</div>
+				</div>
+			</section>
+			<section class="about">
+				<a name="About"></a>
+				<div class="container">
+					<div class="row row--about-title">
+						<div class="column-title column-title--about">
+							<div class="my-title">
+								<p class="my-title__name">About us</p>
+								<div class="my-title__line-wrapper">
+									<div class="my-title__underline"></div>
+								</div>								
+								<div class="my-title__descriptor-wrapper">
+									<p class="my-title__description">This is who we are - or at least who we strive to be...</p>
+								</div>								
+							</div>
+						</div>
+					</div>	
+					<div class="row row--about">
+						<div class="column-about--left">
+							<div class="about-card about-card--typography">
+								<div class="my-card">
+									<div class="my-card__bg">
+										<div class="my-card__main"></div>
+										<div class="my-card__aside"></div>
+									</div>											
+									<div class="my-card__icon"></div>
+									<div class="my-card__name"><span>Typography</span></div>
+								</div>								
+							</div>
+							<div class="about-card about-card--iconset">
+								<div class="my-card my-card--left">
+									<div class="my-card__bg">
+										<div class="my-card__main"></div>
+										<div class="my-card__aside"></div>
+									</div>											
+									<div class="my-card__icon"></div>
+									<div class="my-card__name"><span>Icon set</span></div>
+								</div>								
+							</div>
+							<div class="about-card about-card--accurate">
+								<div class="my-card">
+									<div class="my-card__bg">
+										<div class="my-card__main"></div>
+										<div class="my-card__aside"></div>
+									</div>											
+									<div class="my-card__icon"></div>
+									<div class="my-card__name"><span>Accurate</span></div>
+								</div>								
+							</div>
+						</div>
+						<div class="column-about--right">
+							<div class="about__img-video">
+								<div class="btnPlay"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="posts">
+				<a name = "Pages"></a>
+				<div class="container">
+					<div class="row row--posts-title">
+						<div class="column-title column-title--posts">
+							<div class="my-title">
+								<p class="my-title__name">Latest posts</p>
+								<div class="my-title__line-wrapper">
+									<div class="my-title__underline"></div>
+								</div>								
+								<div class="my-title__descriptor-wrapper">
+									<p class="my-title__description">Information is a sourse of learning. But unless it is organiszed, processed and available to the right people</p>
+								</div>								
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="column-posts-third">
+							<div class="post">
+								<img src="img/Img post 1.png" alt="img-blog">
+								<p class="post__title"><a href="#">In the Future We Will All Live in Star Wars</a></p>
+								<p class="post__subtitle">The thing you’re doing now, reading prose on a screen, is going out of fashion. The defining narrative of our online moment concerns the decline of text, and the exploding reach and power of audio and video…</p>
+								<div class="post__statistic statistic">
+									<div class="statistic__date"><p>20 oct, 2019</p></div>
+									<div class="statistic__point"></div>
+									<div class="statistic__time-read"><p>10 min read</p></div>
+									<div class="statistic__point"></div>
+									<div class="statistic__quantity-view"><p>11</p></div>
+								</div>
+							</div>
+						</div>
+						<div class="column-posts-third">
+							<div class="post">
+								<img  src="img/Img post 2.png" alt="img-blog">
+								<p class="post__title"><a href="#">Rubik’s Cube? No, Robotics and AI are…</a></p>
+								<p class="post__subtitle">In other words, I will try to de-hype the crowd about the recent development in robotics. Concretely, OpenAI has claimed some pretty amazing results with learning to solve the Rubik’s cube with a robotic hand…</p>
+								<div class="post__statistic statistic">
+									<div class="statistic__date"><p>11 oct, 2019</p></div>
+									<div class="statistic__point"></div>
+									<div class="statistic__time-read"><p>7 min read</p></div>
+									<div class="statistic__point"></div>
+									<div class="statistic__quantity-view"><p>19</p></div>
+								</div>
+							</div>
+						</div>
+						<div class="column-posts-third">
+							<div class="post">
+								<img src="img/Img post 3.png" alt="img-blog">
+								<p class="post__title"><a href="#">How the Internet of Things will Transfo…</a></p>
+								<p class="post__subtitle">The Internet of Things (IoT) promises to be the most important technological development for consumers since the advent of the smartphone. Experts believe that this collection of internet-connected technolog…</p>
+								<div class="post__statistic statistic">
+									<div class="statistic__date"><p>28 oct, 2019</p></div>
+									<div class="statistic__point"></div>
+									<div class="statistic__time-read"><p>16 min read</p></div>
+									<div class="statistic__point"></div>
+									<div class="statistic__quantity-view"><p>41</p></div>
+								</div>
+							</div>
+						</div>
+					</div>		
+				</div>				
+			</section>
+			<section class="portfolio">
+				<a name="Portfolio"></a>
+				<div class="container">
+					<div class="row row--portfolio-title">
+						<div class="column-title column-title--portfolio">
+							<div class="my-title">
+								<p class="my-title__name">Latest portfolio</p>
+								<div class="my-title__line-wrapper">
+									<div class="my-title__underline"></div>
+								</div>								
+								<div class="my-title__descriptor-wrapper">
+									<p class="my-title__description">Put there articles successfully special warrant submit agree what along then</p>
+								</div>								
+							</div>
+						</div>
+					</div>
+					<div class="mySlider mySlider--portfolio">
+						<div class="row row--portfolio-blocks mySlider__wrapper--portfolio">
+							<div class="column-portfolio-third mySlider__item--portfolio">
+								<div class="portfolio-block portfolio-block--one">									
+									<p class="portfolio-block__title">Art Ocean</p>
+									<p class="portfolio-block__subtitle">Photography, art, nature</p>								
+									<div class="portfolio-block__animation">
+										<div class="hideblock">
+											<div class="hideblock__attach-index"><a href="#"><div class="attach-index"></div></a></div>
+											<div class="hideblock__search-index"><a href="#"><div class="search-index"></div></a></div>
+										</div>
+									</div>							
+								</div>	
+							</div>
+							<div class="column-portfolio-third mySlider__item--portfolio">
+								<div class="portfolio-block portfolio-block--two">									
+									<p class="portfolio-block__title">City guide</p>
+									<p class="portfolio-block__subtitle">Photography, city, way</p>
+									<div class="portfolio-block__animation">
+										<div class="hideblock">
+											<div class="hideblock__attach-index"><a href="#"><div class="attach-index"></div></a></div>
+											<div class="hideblock__search-index"><a href="#"><div class="search-index"></div></a></div>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="column-portfolio-third mySlider__item--portfolio">
+								<div class="portfolio-block portfolio-block--three">									
+									<p class="portfolio-block__title">Mountains</p>
+									<p class="portfolio-block__subtitle">Art, hiking</p>
+									<div class="portfolio-block__animation">
+										<div class="hideblock">
+											<div class="hideblock__attach-index"><a href="#"><div class="attach-index"></div></a></div>
+											<div class="hideblock__search-index"><a href="#"><div class="search-index"></div></a></div>
+										</div>
+									</div>
+								</div>					
+							</div>		
+						</div>	
+					</div>					
+					<div class="row row--portfolio-button-arrow">
+						<div class="column-portfolio-third column-portfolio-third--button-arrow">
+							<button class="btn-arrow btn-arrow--back btn-back-portfolio"></button>
+							<button class="btn-arrow btn-arrow--forward btn-forward-portfolio"></button>
+						</div>			
+					</div>
+					<div class="row row--portfolio-button">
+						<div class="column-portfolio-third column-portfolio-third--button">
+							<button class="btn btn--portfolio-light">See all works</button>
+						</div>
+					</div>	
+				</div>
+			</section>
+			<section class="testimonials">
+				<div class="container">
+					<div class="row row--testimonials-title">
+						<div class="column-title column-title--testimonials">
+							<div class="my-title">
+								<p class="my-title__name">Testimonials</p>
+								<div class="my-title__line-wrapper">
+									<div class="my-title__underline"></div>
+								</div>								
+								<div class="my-title__descriptor-wrapper">
+									<p class="my-title__description"></p>
+								</div>								
+							</div>
+						</div>
+					</div>
+					<div class="row row--testimonials">
+						<div class="column-testimonials column-testimonials--left">
+							<div class="btn-arrow btn-arrow--back btn-back-testimonials"></div>
+						</div>
+						<div class="column-testimonials column-testimonials--center">
+							<div class="mySlider mySlider--testimonials">
+								<div class="mySlider__wrapper--testimonials">
+									<div class="mySlider__item--testimonials">
+										<div class="row row--testimonials-item ">
+											<div class="column-testimonials column-testimonials--center-left">
+												<div class="testimonials-main__left">
+													<div class="quote">
+														<div class="quote__text"><p><span>,,</span><br/> We move at a fast pace. I’m always working on something. I am excited about it!</p></div>
+														<div class="quote__author"><p>Martin Oda</p></div>
+														<div class="quote__position"><p>Product desgner</p></div>
+													</div>
+												</div>
+											</div>
+											<div class="column-testimonials column-testimonials--center-right">
+												<div class="testimonials-main__right">
+													<img src="./img/people/User img.png" alt="user img">
+												</div>
+											</div>
+										</div>										
+									</div>																	
+								</div>
+							</div>	
+						</div>			
+						<div class="column-testimonials column-testimonials--right">
+							<div class="btn-arrow btn-arrow--forward btn-forward-testimonials"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="contact">
+				<a name="Contact"></a>
+				<div class="container">
+					<div class="row row--contact-title">
+						<div class="column-title column-title--contact">
+							<div class="my-title">
+								<p class="my-title__name">Contact us</p>
+								<div class="my-title__line-wrapper">
+									<div class="my-title__underline"></div>
+								</div>								
+								<div class="my-title__descriptor-wrapper">
+									<p class="my-title__description">Put there articles successfully special warrant submit agree what along than</p>
+								</div>								
+							</div>
+						</div>
+					</div>
+					<div class="row row--contact-social">
+						<div class="social-block social-block--contact">
+							<a href="#"><img class="social-icon social-icon--fb" src="./img/icons/a-icon-facebook.svg"/></a>
+							<a href="#"><img class="social-icon social-icon--instagram" src="./img/icons/a-icon-instagram.svg"/></a>
+							<a href="#"><img class="social-icon social-icon--dribbble" src="./img/icons/a-icon-dribbble.svg"/></a>
+						</div>
+					</div>
+					<div class="wrapper-formBlock">
+						<div class="row row--contact-form">
+							<div class="contact__formBlock">
+								<div class="container">
+									<div class="row row--formBlock">
+										<div class="column-formBlock-title">
+											<div class="formBlock-title__icon"></div>
+											<p class="formBlock-title__text">Write us a few words about your project and we will prepare proposal for you  within 24 hours</p>
+										</div>
+										<div class="column-formBlock-form">
+											<form class="contact-form" name="contact">
+												<div class="form-group">
+													<label for="InputText">Your name</label>
+													<input type="text" class="form-control contact-form__input" id="InputText">
+												</div>
+												<div class="form-group">
+													<label for="InputEmail">Email</label>
+													<input type="email" class="form-control contact-form__input" id="InputEmail">
+												</div>
+												<div class="form-group">
+													<label for="InputPassword" class="contact-form__label-password">Password</label>
+													<input type="password" class="form-control contact-form__input" id="InputPassword">
+												</div>
+												<button type="submit" class="btn btn--submit-dark">Send message</button>
+											</form>							
+											<p class="formBlock__post-scriptum">If you need to have a DNA first, just contact us at <a class="formBlock__email-link" href="mailto: email@gmail.com" >email@gmail.com</a></p>		
+										</div>
+										<div class="column-formBlock-map">
+											<img src="./img/map.png" alt="map">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>					
+				</div>
+			</section>
+			<section class="steps">
+				<div class="container">
+					<div class="row row--steps">
+						<div class="column-steps">
+							<p class="steps__title">What will be next step?</p>
+							<ol class="steps__list">
+								<li class="steps__item">
+									<p class="steps__step-title">We’ll prepare a proposal</p>		
+									<div class="steps__step-wrapper">
+										<p class="steps__step-text">Required scope, timeline and apr. price will be included if you provide us with detail information about a project.</p>
+									</div>
+								</li>	
+								<li class="steps__item">
+									<p class="steps__step-title">Together we discuss it</p>
+									<div class="steps__step-wrapper">
+										<p class="steps__step-text">Let’s get acquainted and discuss all the possible variant and options. Google Hangouts or Skype usually wirks great.</p>
+									</div>
+								</li>
+								<li class="steps__item">
+									<p class="steps__step-title">Let’s start building</p>
+									<div class="steps__step-wrapper steps__step-wrapper--unborder">
+										<p class="steps__step-text">When the contract is signed and all goals are set we can start the first sprint.</p>
+									</div>
+								</li>
+							</ol>
+						</div>
+					</div>	
+				</div>
+			</section>		
+		</main>
+		<!-- F O O T E R -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row row--footer">
+					<div class="column-footer">
+						<div class="social-block social-block--footer">
+							<a href="#"><img class="social-icon social-icon--fb" src="./img/icons/a-icon-facebook.svg"/></a>
+							<a href="#"><img class="social-icon social-icon--instagram" src="./img/icons/a-icon-instagram.svg"/></a>
+							<a href="#"><img class="social-icon social-icon--dribbble" src="./img/icons/a-icon-dribbble.svg"/></a>
+						</div>
+					</div>
+					<div class="column-footer">
+						<p class="logo">BlogWorld</p>
+					</div>
+					<div class="column-footer">
+						<p class="copyright">©2019 All Rights Reserved.</p>
+					</div>
+				</div>
+			</div>
+		</footer>		
+	</div>
+	<!-- Modal window -->
+	<div class="container-modalPostForm"></div>	
+	<div class="overlayModal" id="overlay-modal"></div> 
+
+	<script type="module" src="./js/main.js"></script>
+</body>
+</html>
+
+
+
